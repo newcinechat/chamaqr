@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Campainha Digital QR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    button {
+      font-size: 22px;
+      padding: 20px;
+      width: 100%;
+      max-width: 300px;
+      border: none;
+      border-radius: 10px;
+      background: #00c853;
+      color: #000;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔔 Campainha Digital</h1>
+  <p>Escaneie o QR Code e toque para avisar o morador</p>
+
+  <button onclick="tocar()">TOCAR CAMPAINHA</button>
+
+  <p id="msg"></p>
+
+  <script>
+    function tocar() {
+      document.getElementById("msg").innerText =
+        "🔔 Campainha acionada! O morador foi avisado.";
+    }
+  </script>
+
+</body>
+</html>
